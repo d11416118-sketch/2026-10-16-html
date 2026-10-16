@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-4.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="text" id="na"><button>查詢</button><br>
+    姓名:<span></span>
+    <script>
+
+        /*
+        // js 語法
+        document.querySelector("button").addEventListener('click',function(){
+            let std = document.querySelector("#na").value ;
+            document.querySelector("span").textContent = std ; 
+        });
+        // jQuery 語法
+        */
+
+        $("button").click( function(){
+            let std = $("#na").val() ;
+            $("span").text( std ) ;
+
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

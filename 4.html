@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .intro , .school , .sport {
+           display:none;
+        }
+       .box{
+        width:800px;
+        margin:20px auto;
+        background-color: blanchedalmond;
+       }
+       .menu li{
+        display: inline-block;
+        background-color: blue;
+        text-align: center;
+       }
+       .menu li a {
+        display:block;
+        width:150px;
+        height:40px;
+        line-height: 40px;
+        color:white;
+        text-decoration: none;
+        font-weight: 800;
+       }
+       .menu li a:hover{
+        background-color: rosybrown;
+       }
+       .box ul{
+        margin-bottom:10px;
+       }
+       .box p{
+        font-size: 24px;
+        margin-bottom: 10px;
+       }
+    </style>
+</head>
+<body>  
+    <div class="box">
+        <ul class="menu">
+            <li><a href="#" class="aboutMe">關於我</a></li>
+            <li><a href="#" class="expr">學經歷</a></li>
+            <li><a href="#" class="intr">喜好</a></li>
+        </ul>
+        <p class="intro">我是許正憲，目前任教於德明科大資管系。</p>
+        <p class="school">畢業於中興大學應數系、中正大學資工所。</p>
+        <p class="sport"> 棒球，羽球，兵乓球等運動</p>
+    </div>
+    <script>
+        $(".menu li").click(function(){
+            $("p").hide();
+            let n = $(this).index ;
+            $("p")[n].style.display = 'block' ; //jQuery 物件轉換成 DOM 物件的樣式屬性改變
+
+
+        });
+    </script>
+</body>
+</html>

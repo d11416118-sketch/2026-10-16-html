@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <a href="#" id="Website">網站連結</a><br>
+    <button class="btnGoogle" data-webattr="https://www.google.com">Google網站</button>
+    <button class="btnYahoo" data-webattr="https://www.yahoo.com.tw">Yahoo網站</button>
+    <script>
+        $(document).ready(function(){
+            /*
+            $(".btnGoogle").click( function(){
+                $("a").text( $(this).text() );
+                $("a").attr("href",$(this).attr("data-webatter"));
+            });
+            $(".btnYahoo").click( function(){
+                $("a").text( $(this).text() );
+                $("a").attr("href",$(this).attr("data-webatter"));
+            });
+            */
+           $("button").click(function(){
+                $("a").text( $(this).text());
+                $("a").attr("href",$(this).attr("data-webattr"))
+           });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+第03題
+
+ <a href="#" id="Website">網站連結</a><br>
+    <button class="btnGoogle" data-webattr="https://www.google.com">Google網站</button>
+    <button class="btnYahoo" data-webattr="https://www.yahoo.com.tw">Yahoo網站</button>
+    <script>
+        
+    </script>
+
+
+
+
+
+第04題
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .intro , .school , .sport {
+           display:none;
+        }
+       .box{
+        width:800px;
+        margin:20px auto;
+        background-color: blanchedalmond;
+       }
+       .menu li{
+        display: inline-block;
+        background-color: blue;
+        text-align: center;
+       }
+       .menu li a {
+        display:block;
+        width:150px;
+        height:40px;
+        line-height: 40px;
+        color:white;
+        text-decoration: none;
+        font-weight: 800;
+       }
+       .menu li a:hover{
+        background-color: rosybrown;
+       }
+       .box ul{
+        margin-bottom:10px;
+       }
+       .box p{
+        font-size: 24px;
+        margin-bottom: 10px;
+       }
+    </style>
+</head>
+<body>  
+    <div class="box">
+        <ul class="menu">
+            <li><a href="#" class="aboutMe">關於我</a></li>
+            <li><a href="#" class="expr">學經歷</a></li>
+        </ul>
+        <p class="intro">我是許正憲，目前任教於德明科大資管系。</p>
+        <p class="school">畢業於中興大學應數系、中正大學資工所。</p>
+    </div>
+    <script>
+     
+    </script>
+</body>
+</html>
+
+
+第06週
+
+第01題
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-4.0.0.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    書名：<input type="text" id="bkna"><button>新增</button><br>
+    現在有:<span id="bkcount">0</span>本書<br>
+    <ul>      
+    </ul>
+    <script>
+      
+    </script>
+</body>
+</html>
+
+
+
+
+第02題
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-4.0.0.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <style>
+        table , td {
+            border: 1px solid #000;
+        }
+    </style>
+   
+</head>
+<body>
+    <button id="btnDeleteAll">清除所有資料</button><br>
+    <table>
+        <thead>
+            <tr>
+                <td>姓名</td>
+                <td>年齡</td>
+                <td>功能</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    
+    </table>
+    <script>
+        let person = [{"Name":"王一","Age":30}  ,  {"Name":"王二","Age":40} ]; // JSON 格式 -- 物件陣列
+       
+        // 刪除鈕
+       
+        // 刪除全部鈕
+        
+
+    </script>
+</body>
+</html>
+
+
+
+
+第03題
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>輪播與點選圖片</title>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js">
+  </script>
+  <style>
+    div {
+      clear: left;
+    }
+
+    .selected {
+      background: orange;
+    }
+
+    .small {
+      width: 100px;
+      float: left;
+      margin: 2px;
+      padding: 3px;
+      border: 1px black solid;
+    }
+
+    #big {
+      width: 640px;
+    }
+  </style>
+  <script>
+    
+   
+  </script>
+</head>
+
+<body>
+  <h3>看美景</h3>
+  <div id="thumbs">
+    <img class="small selected" src="https://picsum.photos/id/384/600/400" alt="">
+    <img class="small" src="https://picsum.photos/id/484/600/400" alt="">
+    <img class="small" src="https://picsum.photos/id/584/600/400" alt="">
+    <img class="small" src="https://picsum.photos/id/784/600/400" alt="">
+  </div>
+  <div>
+    <img id="big" src="https://picsum.photos/id/384/600/400">
+  </div>
+</body>
+
+</html>

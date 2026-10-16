@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-4.0.0.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <style>
+        table , td {
+            border: 1px solid #000;
+        }
+    </style>
+   
+</head>
+<body>
+    <button id="btnDeleteAll">清除所有資料</button><br>
+    <table>
+        <thead>
+            <tr>
+                <td>姓名</td>
+                <td>年齡</td>
+                <td>功能</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    
+    </table>
+    <script>
+        let person = [{"Name":"王一","Age":30}  ,  {"Name":"王二","Age":40} ]; // JSON 格式 -- 物件陣列
+        for(let i=0 ; i<person.length ; i++){
+            let tr = $("<tr><td>" + person[i].Name + "</td><td>"+person[i].Age+"</td><td><button class='btnDelete'>刪除</button></td></tr>")
+            $("tbody").append(tr);
+        }
+        // 刪除鈕
+       $(".btnDelete").click( function(){
+            let tr = $(this).parents().eq(1) ;
+            tr.remove();
+       });
+        // 刪除全部鈕
+        $("#btnDeleteAll").click( function(){
+            $("tbody").empty() ;
+        });
+
+    </script>
+</body>
+</html>
+
+</html>
